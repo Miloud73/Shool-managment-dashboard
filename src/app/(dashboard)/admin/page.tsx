@@ -1,5 +1,7 @@
+import Announcement from "@/components/Announcement";
 import AttendenceCharts from "@/components/AttendenceCharts";
 import CountCharts from "@/components/CountCharts";
+import EventCalender from "@/components/EventCalender";
 import FinanceCharts from "@/components/FinanceCharts";
 import UserCard from "@/components/UserCard";
 import type { Metadata } from "next";
@@ -33,7 +35,10 @@ const AdminPage = () => {
         </div>
       </div>
       {/* RIGHT SIDE */}
-      <div className="w-full lg:w-1/3 ">RIGHT</div>
+      <div className="w-full lg:w-1/3 flex flex-col gap-8  rounded-full">
+        <EventCalender/>
+        <Announcement/>
+      </div>
     </div>
   );
 };
