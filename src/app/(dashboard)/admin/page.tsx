@@ -1,3 +1,4 @@
+import AttendenceCharts from "@/components/AttendenceCharts";
 import CountCharts from "@/components/CountCharts";
 import UserCard from "@/components/UserCard";
 import type { Metadata } from "next";
@@ -24,7 +25,7 @@ const AdminPage = () => {
 
           </div>
           <div className="w-full lg:w-2/3 h-[450px] flex flex-col gap-8">
-
+            <AttendenceCharts/>
           </div>
 
         </div>
