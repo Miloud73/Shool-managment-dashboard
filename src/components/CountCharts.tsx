@@ -28,7 +28,7 @@ const data = [
 
 const CountCharts = () => {
   return (
-    <div className="bg-white rounded-xl w-full h-[75%] p-4">
+    <div className="bg-white rounded-xl w-full h-[350px] p-4">
       <div className="flex justify-between items-center">
         <h1 className="text-lg font-semibold">Students</h1>
         <Image src="/moreDark.png" alt="moreDark icon" width={20} height={20} />

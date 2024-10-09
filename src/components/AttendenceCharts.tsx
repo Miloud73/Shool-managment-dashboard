@@ -49,7 +49,7 @@ const data = [
 
 const AttendenceCharts = () => {
   return (
-    <div className="bg-white rounded-xl w-full h-[75%] p-4">
+    <div className="bg-white rounded-xl w-full h-[350px] p-4">
       <div className="flex justify-between items-center">
         <h1 className="text-lg font-semibold">Attendence</h1>
         <Image src="/moreDark.png" alt="moreDark icon" width={20} height={20} />
@@ -69,7 +69,7 @@ const AttendenceCharts = () => {
           >
             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#ddd"/>
             <XAxis dataKey="name" axisLine={false} tickLine={false}/>
-            <YAxis axisLine={false}/>
+            <YAxis tickLine={false}/>
             <Tooltip />
             <Legend />
             <Bar

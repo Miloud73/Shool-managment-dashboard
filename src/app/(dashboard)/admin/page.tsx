@@ -1,5 +1,6 @@
 import AttendenceCharts from "@/components/AttendenceCharts";
 import CountCharts from "@/components/CountCharts";
+import FinanceCharts from "@/components/FinanceCharts";
 import UserCard from "@/components/UserCard";
 import type { Metadata } from "next";
 import React from "react";
@@ -15,25 +16,24 @@ const AdminPage = () => {
       <div className="w-full lg:w-2/3 ">
         <div className="flex gap-4 justify-between flex-wrap">
           <UserCard type="student" />
-          <UserCard type="admin"/>
-          <UserCard type="teacher"/>
-          <UserCard type="staff"/>
+          <UserCard type="admin" />
+          <UserCard type="teacher" />
+          <UserCard type="staff" />
         </div>
         <div className="flex gap-4 flex-col lg:flex-row pt-4">
-          <div className="w-full lg:w-1/3 h-[450px]">
+          <div className="relative w-full lg:w-1/3 h-[350px]">
             <CountCharts />
-
           </div>
-          <div className="w-full lg:w-2/3 h-[450px] flex flex-col gap-8">
-            <AttendenceCharts/>
+          <div className="relative w-full lg:w-2/3 h-[350px] flex flex-col gap-8">
+            <AttendenceCharts />
           </div>
-
         </div>
-        <div className=""></div>
+        <div className="w-full pt-4">
+          <FinanceCharts />
+        </div>
       </div>
       {/* RIGHT SIDE */}
       <div className="w-full lg:w-1/3 ">RIGHT</div>
-     
     </div>
   );
 };
