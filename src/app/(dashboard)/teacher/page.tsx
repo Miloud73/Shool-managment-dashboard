@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
+import Announcement from "@/components/Announcement";
+import BigCalendar from "@/components/BigCalender";
 export const metadata: Metadata = {
   title: "Teacher | dashborad",
   description: "This is the teacher dashboard",
@@ -7,9 +9,18 @@ export const metadata: Metadata = {
 
 const TeacherPage = () => {
   return (
-    <div>
-      <h1>teacher Dashboard</h1>
-      <p>Welcome to the teacher dashboard!</p>
+    <div className="flex-1 p-4 flex gap-4 flex-col xl:flex-row">
+      {/* LEFT */}
+      <div className="w-full xl:w-2/3">
+        <div className="h-full bg-white p-4 rounded-md">
+          <h1 className="text-xl font-semibold">Schedule (Teacher)</h1>
+          <BigCalendar />
+        </div>
+      </div>
+      {/* RIGHT */}
+      <div className="w-full xl:w-1/3 flex flex-col gap-8">
+        <Announcement />
+      </div>
     </div>
   );
 };
