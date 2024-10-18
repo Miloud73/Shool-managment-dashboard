@@ -399,7 +399,7 @@ export const lessonsData = [
   {
     id: 1,
     subject: "Math",
-    class: "1A",
+    class: "L2",
     teacher: "Tommy Wise",
   },
   {
@@ -462,7 +462,7 @@ export const examsData = [
   {
     id: 1,
     subject: "Math",
-    class: "1A",
+    class: "L2",
     teacher: "Martha Morris",
     date: "2025-01-01",
   },
@@ -535,7 +535,7 @@ export const assignmentsData = [
   {
     id: 1,
     subject: "Math",
-    class: "1A",
+    class: "L2",
     teacher: "Anthony Boone",
     dueDate: "2025-01-01",
   },
@@ -608,7 +608,7 @@ export const resultsData = [
   {
     id: 1,
     subject: "Math",
-    class: "1A",
+    class: "L2",
     teacher: "John Doe",
     student: "John Doe",
     date: "2025-01-01",
@@ -711,7 +711,7 @@ export const eventsData = [
   {
     id: 1,
     title: "Lake Trip",
-    class: "1A",
+    class: "L2",
     date: "2025-01-01",
     startTime: "10:00",
     endTime: "11:00",
